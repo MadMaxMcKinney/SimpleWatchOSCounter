@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E5156B3E250DC46E00288933 /* SubtractButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5156B3D250DC46E00288933 /* SubtractButton.swift */; };
 		E5156B41250DD28D00288933 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5156B40250DD28D00288933 /* Counter.swift */; };
 		E5156B44250DDF5800288933 /* SimpleCounterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5156B43250DDF5800288933 /* SimpleCounterVM.swift */; };
+		E528BED5250F0F9D0066BCA8 /* CounterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E528BED4250F0F9D0066BCA8 /* CounterButton.swift */; };
 		E5374558250D6E4F00BB19E3 /* SimpleCounter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E5374557250D6E4F00BB19E3 /* SimpleCounter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E537455E250D6E4F00BB19E3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E537455C250D6E4F00BB19E3 /* Interface.storyboard */; };
 		E5374560250D6E5000BB19E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E537455F250D6E5000BB19E3 /* Assets.xcassets */; };
@@ -21,7 +21,6 @@
 		E5374574250D6E5000BB19E3 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5374573250D6E5000BB19E3 /* NotificationView.swift */; };
 		E5374576250D6E5100BB19E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5374575250D6E5100BB19E3 /* Assets.xcassets */; };
 		E5374579250D6E5100BB19E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5374578250D6E5100BB19E3 /* Preview Assets.xcassets */; };
-		E537458B250D817F00BB19E3 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E537458A250D817F00BB19E3 /* AddButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,9 +66,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E5156B3D250DC46E00288933 /* SubtractButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractButton.swift; sourceTree = "<group>"; };
 		E5156B40250DD28D00288933 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		E5156B43250DDF5800288933 /* SimpleCounterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCounterVM.swift; sourceTree = "<group>"; };
+		E528BED4250F0F9D0066BCA8 /* CounterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterButton.swift; sourceTree = "<group>"; };
 		E5374553250D6E4F00BB19E3 /* SimpleCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5374557250D6E4F00BB19E3 /* SimpleCounter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleCounter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E537455D250D6E4F00BB19E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -85,7 +84,6 @@
 		E5374578250D6E5100BB19E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E537457A250D6E5100BB19E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E537457B250D6E5100BB19E3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		E537458A250D817F00BB19E3 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,8 +172,7 @@
 		E5374589250D816B00BB19E3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E537458A250D817F00BB19E3 /* AddButton.swift */,
-				E5156B3D250DC46E00288933 /* SubtractButton.swift */,
+				E528BED4250F0F9D0066BCA8 /* CounterButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -311,10 +308,9 @@
 				E5156B41250DD28D00288933 /* Counter.swift in Sources */,
 				E5156B44250DDF5800288933 /* SimpleCounterVM.swift in Sources */,
 				E537456E250D6E5000BB19E3 /* HostingController.swift in Sources */,
-				E5156B3E250DC46E00288933 /* SubtractButton.swift in Sources */,
 				E537456C250D6E5000BB19E3 /* CounterView.swift in Sources */,
 				E5374572250D6E5000BB19E3 /* NotificationController.swift in Sources */,
-				E537458B250D817F00BB19E3 /* AddButton.swift in Sources */,
+				E528BED5250F0F9D0066BCA8 /* CounterButton.swift in Sources */,
 				E5374570250D6E5000BB19E3 /* ExtensionDelegate.swift in Sources */,
 				E5374574250D6E5000BB19E3 /* NotificationView.swift in Sources */,
 			);

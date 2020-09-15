@@ -12,6 +12,6 @@ import SwiftUI
 
 class HostingController: WKHostingController<CounterView> {
     override var body: CounterView {
-        return CounterView(simpleCounter: SimpleCounterVM())
+        return CounterView(simpleCounter: SimpleCounterVM(counterButtons: [[.ADD, .ADD, .ADD],[.SUBTRACT]]))
     }
 }

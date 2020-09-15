@@ -10,7 +10,12 @@ import Foundation
 
 class SimpleCounterVM: ObservableObject {
     
+    public var counterButtons:[[CounterButtonType]]
     @Published private(set) var counter:Counter = Counter()
+    
+    init(counterButtons:[[CounterButtonType]]) {
+        self.counterButtons = counterButtons
+    }
     
     public func getCount() -> Int {
         return UserDefaults.standard.integer(forKey: "counter")
@@ -21,8 +26,12 @@ class SimpleCounterVM: ObservableObject {
         saveValue()
     }
     
-    public func updateCounter(amount: Int) {
-        counter.count += amount
+    public func updateCounter(type: CounterButtonType, amount: Int) {
+        var value = amount
+        if(type == .SUBTRACT) {
+            value = (-value)
+        }
+        counter.count += value
         saveValue()
     }
     
